@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Post" representedClassName=".Post" syncable="YES">
+        <attribute name="canLike" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="comments" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary"/>
+        <attribute name="imageLink" optional="YES" attributeType="String"/>
+        <attribute name="likes" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="originalDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="owner" optional="YES" attributeType="String"/>
+        <attribute name="ownerImage" optional="YES" attributeType="Binary"/>
+        <attribute name="ownerImageLink" optional="YES" attributeType="String"/>
+        <attribute name="reposted" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="repostedImage" optional="YES" attributeType="Binary"/>
+        <attribute name="repostedImageLink" optional="YES" attributeType="String"/>
+        <attribute name="repostedText" optional="YES" attributeType="String"/>
+        <attribute name="reposts" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="avi" optional="YES" attributeType="Binary"/>
+        <attribute name="aviLink" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="online" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="token" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Post" positionX="-63" positionY="-18" width="128" height="298"/>
+        <element name="User" positionX="-54" positionY="-9" width="128" height="148"/>
+    </elements>
 </model>
